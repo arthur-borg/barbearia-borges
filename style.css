@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+.hero {
+    background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.8)
+), url(https://www.trendymeiden.nl/wp-content/uploads/2024/11/Bp9AZlE1oWrW.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 55px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+.hero p {
+    font-size: 18px;
+    color: #cccccc;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.botao {
+    background-color: #c9a227;
+    color: #111;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.botao:hover {
+    background-color: #e0bd45;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.servicos {
+    background-color: #111;
+    padding: 80px 20px;
+    text-align: center;
+}
+.servicos h2 {
+    color: #c9a227;
+    font-size: 32px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+.servicos p {
+    color: #cccccc;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+.servico {
+    background-color: #242424;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    padding-bottom: 15px;
+    margin: 0 0 20px;
+    min-height: 0;
+    margin-bottom: 20px;
+    transition: 0.3;
+}
+.servico h3 {
+    color: #c9a227;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+.servico p {
+    color: #cccccc;
+    font-size: 15px;
+    line-height: 1.6;
+}
+.lista-servicos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.servico:hover {
+    border: 1px solid #c9a227;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(201, 162, 39, 0.15);
+}
+#contato {
+    background-color: #1a1a1a;
+    padding: 80px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contato h2 {
+    color: #c9a227;
+    font-size: 32px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+#contato p {
+    color: #cccccc;
+    font-size: 17px;
+    line-height: 1.6;
+}
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+    .hero .botao {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+    .servico {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+footer {
+    background-color: #0a0a0a;
+    padding: 25px 20px;
+    text-align: center;
+    border-top: 1px solid #c9a227;
+}
+footer p {
+    color: #888;
+    font-size: 14px;
+}
+#contato .horario {
+    color: #c9a227; 
+    font-size: 15px;
+    margin-top: 4px;
+}
+#contato p a {
+    color: #c9a227;
+    text-decoration: none;
+}
+#contato p a:hover {
+    color: #e0bd45;
+    transition: 0.3s;
+}
